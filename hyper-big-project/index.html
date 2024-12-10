@@ -37,6 +37,7 @@
         api_base: "https://api-iam.intercom.io",
         app_id: "k8ol8ra9",
         handoff_with_javascript: () => {
+          LiveChatWidget.init();
           LiveChatWidget.call("maximize", { messageDraft: "I need help!" });
         }
       }
