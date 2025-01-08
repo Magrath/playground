@@ -40,12 +40,17 @@
     </div>
 
     <script>
+      const params = new URLSearchParams(window.location.search);
+      const name = params.get("name") || "Joe Bloggs";
+      const email = params.get("email") || "joe@bloggs.com";
+      const user_id = params.get("user_id") || "abc123987";
+
       window.intercomSettings = {
         api_base: "https://api-iam.intercom.io",
         app_id: "f9r46dkk",
-        user_id: "abc123987",
-        name: "Joe Bloggs", 
-        email: "joe@bloggs.com"
+        user_id: user_id,
+        name: name, 
+        email: email
       };
     </script>
     
