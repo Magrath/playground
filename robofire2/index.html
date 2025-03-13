@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
   <head>
-    <title>Paul's Workspace Demo</title>
+    <title>Robofire 2</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
@@ -9,25 +9,16 @@
     <script>
       function reset() {
         const cookies = document.cookie.split(";");
-
         for (let i = 0; i < cookies.length; i++) {
-
             const cookie = cookies[i];
-
             const eqPos = cookie.indexOf("=");
-
             const name = eqPos > -1 ? cookie.substr(0, eqPos) : cookie;
-
             // Set the cookie's expiration date to a past date to delete it
-
             document.cookie = name + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT;path=/";
-
         }
-
         window.localStorage.clear();
         window.sessionStorage.clear();
         window.location.reload();
-
       }
     </script>
   </head>
@@ -38,15 +29,9 @@
       </div>
       <button class="bg-black text-white p-2 m-2 rounded hover:bg-opacity-75" onclick="reset()">Reset</button>
     </div>
-    <script>
-      window.intercomSettings = {
-        api_base: "https://api-iam.intercom.io",
-        app_id: "zasp88fn",
-      }
-    </script>
-    <script>
-      // We pre-filled your app ID in the widget URL: 'https://widget.intercom.io/widget/3qmk5gyg'
-      (function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',w.intercomSettings);}else{var d=document;var i=function(){i.c(arguments);};i.q=[];i.c=function(args){i.q.push(args);};w.Intercom=i;var l=function(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/zasp88fn';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);};if(document.readyState==='complete'){l();}else if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();
-    </script>
+
+    <!-- Start of robofire2zendeskcom Zendesk Widget script -->
+    <script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=c3b7d45f-3642-4ecc-a806-0df52ced75c1"> </script>
+    <!-- End of robofire2zendeskcom Zendesk Widget script -->
   </body>
 </html>
