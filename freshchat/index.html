@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-    <title>Freshdesk</title>
+    <title>Freshchat</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
@@ -32,13 +32,9 @@
     </div>
     <button class="bg-black text-white p-2 m-2 rounded hover:bg-opacity-75" onclick="reset()">Reset</button>
 </div>
-<script>
-    window.fwSettings={
-        'widget_id':203000000831
-    };
-    !function(){if("function"!=typeof window.FreshworksWidget){var n=function(){n.q.push(arguments)};n.q=[],window.FreshworksWidget=n}}()
-    FreshworksWidget('hide', 'launcher');
+<script
+        src='//eu.fw-cdn.com/13066337/1018011.js'
+        chat='true'>
 </script>
-<script type='text/javascript' src='https://euc-widget.freshworks.com/widgets/203000000831.js' async defer></script>
 </body>
 </html>
